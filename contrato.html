@@ -106,44 +106,44 @@
               <div class="contact_form-container">
                 <div>
 
-                  <form align="center" name="formulario" method="get" action="" onsubmit="return validar(this)">
+                  <form align="center" name="formulario" method="post" action="" onsubmit="return validar(this)">
 
                     <h5>Datos personales</h5>
 
                     <div>
-                      <input type="text" placeholder="Nombre">
+                      <input type="text" placeholder="Nombre" name="nom">
                     </div>
                     <div>
-                      <input type="text" placeholder="Apellido paterno">
+                      <input type="text" placeholder="Apellido paterno" name="apePat">
                     </div>
                     <div>
-                      <input type="text" placeholder="Apellido materno">
+                      <input type="text" placeholder="Apellido materno" name="apeMat">
                     </div>
                     <div>
-                      <input type="text" placeholder="CURP">
+                      <input type="text" placeholder="CURP" name="curp">
                     </div>
                     <div>
-                      <input type="email" placeholder="Correo electrónico">
+                      <input type="email" placeholder="Correo electrónico" name="correo">
                     </div>
 
                     <br><h5>Dirección:</h5>
 
                     <div>
-                      <input type="text" placeholder="Calle">
+                      <input type="text" placeholder="Calle" name="calle">
                     </div>
                     <div>
-                      <input type="text" placeholder="Número">
+                      <input type="text" placeholder="Número" name="numDir">
                     </div>
                     <div>
-                      <input type="text" placeholder="Código Postal">
+                      <input type="text" placeholder="Código Postal" name="codigoPostal">
                     </div>
                     <div>
-                      <input type="text" placeholder="Alcaldía o municipio">
+                      <input type="text" placeholder="Alcaldía o municipio" name="municipio">
                     </div>
                     <br>
                     <div class="row justify-content-start col-11">
                         <!--<label for="lang">Entidad federativa: </label>-->
-                        <select  class="form-select form-select-sm"  aria-label=".form-select-sm example">
+                        <select  class="form-select form-select-sm"  aria-label=".form-select-sm example" name="entidad">
                           <option selected>Selecciona tu entidad federativa</option>
                           <option value="Aguascalientes">Aguascalientes</option>
                           <option value="Baja California">Baja California</option>
@@ -185,7 +185,7 @@
 
                     <br>
                     <div class="row justify-content-start col-11">
-                      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                      <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="tipoEvento">
                         <option selected>Selecciona tu tipo de evento</option>
                         <option value="Bautizo">Bautizo</option>
                         <option value="Primera comunion">Primera comunión</option>
@@ -197,35 +197,35 @@
                     </div>
                     <br>
                     <div>
-                      <input type="text" placeholder="De haber seleccionado la opcion otro, escriba su tipo de evento">
+                      <input type="text" placeholder="De haber seleccionado la opcion otro, escriba su tipo de evento" name="otroTE">
                     </div>
 
                     <br>
                     <div>
                       <div class="form-group">
                         <label for="fecha">Fecha:</label>
-                        <input type="text" placeholder="dd/mm/aaaa" class="form-control" id="fecha" name="fecha">
+                        <input type="text" placeholder="dd/mm/aaaa" class="form-control" id="fecha" name="fecha" name="fecha">
                       </div>
 
                     </div>
                     <div>
-                      <input type="time">
+                      <input type="time" name="hora">
                     </div>
 
                     <div>
-                      <input type="text" placeholder="Lugar del evento">
+                      <input type="text" placeholder="Lugar del evento" name="lugar">
                     </div>
 
                     <div>
-                      <input type="text" placeholder="Numero de personas">
+                      <input type="text" placeholder="Numero de personas" name="numPersonas">
                     </div>
 
                     <div>
-                      <input type="text" placeholder="DJ">
+                      <input type="text" placeholder="DJ" name="nomDJ">
                     </div>
                     <br>
                     <div class="row justify-content-start col-11">
-                      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                      <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="tipMenu">
                         <option selected>Selecciona tu tipo de menú</option>
                         <option value="Bautizo">Ejecutivo</option>
                         <option value="Primera comunion">Económico</option>
